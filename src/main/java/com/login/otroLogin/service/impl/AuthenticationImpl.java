@@ -4,7 +4,7 @@ import com.login.otroLogin.dto.reques.AuthenticationRequest;
 import com.login.otroLogin.dto.response.AuthenticationResponse;
 import com.login.otroLogin.models.User;
 import com.login.otroLogin.repository.IUserRepository;
-import com.login.otroLogin.service.iface.IUserService;
+import com.login.otroLogin.service.iface.IAuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class UserImpl implements IUserService {
+public class AuthenticationImpl implements IAuthenticationService {
 
     @Autowired
     private AuthenticationManager authenticationManager;
