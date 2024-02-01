@@ -19,7 +19,7 @@ public class AuthenticationController {
     @Autowired
     private AuthenticationImpl authentication;
 
-    @PostMapping("/authorize")
+    @PostMapping("/authenticate")
     public ResponseEntity<AuthenticationResponse> login(@RequestBody @Valid AuthenticationRequest request){
 
         AuthenticationResponse jwtDto = this.authentication.login(request);
